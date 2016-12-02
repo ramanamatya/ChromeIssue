@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+
+<a class="fancybox.iframe" href="/frame.html" id="opener">Click me</a>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.js"></script>
+<script type='text/javascript'>
+$(function(){
+  $(document).ready(function() {
+	$("#opener").fancybox({
+		maxWidth	: 300,
+		maxHeight	: 200,
+		fitToView	: false,
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+});
+</script>
+</body>
+</html>
